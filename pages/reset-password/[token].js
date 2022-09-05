@@ -6,13 +6,14 @@ import AuthContent from "../../components/auth/AuthContent";
 import AuthContainer from "../../components/auth/AuthContainer";
 import Header from "../../components/header";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useRouter } from "next/router";
 import * as yup from "yup";
 import { Formik } from "formik";
 
 export default function ResetPassword() {
   const [email, setEmail] = useState("");
-  const { token } = useParams();
+  const router = useRouter();
+  const { token } = router.query;
 
   const schema = yup.object({
     password: yup

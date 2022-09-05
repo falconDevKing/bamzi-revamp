@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
 import AuthStrip from "../components/auth/AuthStrip";
 import AuthCart from "../components/auth/AuthCart";
 import AuthBody from "../components/auth/AuthBody";

@@ -5,7 +5,6 @@ import { FaQuestionCircle, FaHeart } from "react-icons/fa";
 import { HiUsers } from "react-icons/hi";
 import { MdNotificationsActive, MdInfoOutline } from "react-icons/md";
 import { tickets, latestSales } from "../utils/data";
-// import { Link } from "react-router-dom";
 import Image from "next/image";
 import Link from "next/link";
 
