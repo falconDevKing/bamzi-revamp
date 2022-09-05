@@ -3,6 +3,7 @@ import image4 from "../assets/D1-image5.png";
 import image5 from "../assets/Icon metro-shop.png";
 import image6 from "../assets/D6-image4.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const LeftComponents = () => {
   return (
@@ -186,9 +187,11 @@ const LeftComponents = () => {
         </div>
         <div className="border w-24 h-24 ">
           <div className="">
-            <a href="#" className="">
-              <Image className="w-24" src={image6} alt="product image" />
-            </a>
+            <Link href="#" className="">
+              <a>
+                <Image className="w-24" src={image6} alt="product image" />
+              </a>
+            </Link>
           </div>
         </div>
         <div className="px-3">

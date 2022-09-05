@@ -6,6 +6,7 @@ import Header from "../components/header";
 import Tab from "../components/tab";
 import RelatedProducts from "../components/relatedProducts";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProductDetails() {
   const products = [
@@ -130,22 +131,22 @@ export default function ProductDetails() {
                 <nav className="flex mb-4" aria-label="breadcrumb">
                   <ol className="inline-flex items-center space-x-1 md:space-x-3">
                     <li className="self-center">
-                      <a
+                      <Link
                         href="#!"
                         className="text-gray-700 hover:text-gray-900 font-medium"
                       >
                         {product.category}
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <div className="inline-flex items-center pt-1">
                         <FaChevronRight className="mr-1 md:mr-3 text-gray-400" />
-                        <a
+                        <Link
                           href="#!"
                           className="text-gray-700 hover:text-gray-900 text-sm font-medium"
                         >
                           {product.brand}
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li aria-current="page">

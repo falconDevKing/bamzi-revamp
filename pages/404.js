@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { IoIosWarning } from "react-icons/io";
 import Header from "../components/header";
+import Image from "next/image";
 
 export default function Errorpage() {
   return (
@@ -29,9 +30,10 @@ export default function Errorpage() {
             </div>
 
             <div className={"flex justify-center items-start text-[#f6da8b]"}>
-              <img
+              <Image
                 src={require("../assets/Cart404.png")}
                 className={"sm:w-[400px] w-[320px]"}
+                alt=""
               />
             </div>
           </div>
