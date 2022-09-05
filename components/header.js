@@ -25,7 +25,8 @@ const Header = ({ pryNav, secNav, bg }) => {
                     src={require("../assets/BAMZI.png")}
                     className="lg:w-16 w-20"
                     alt="bamzi"
-                    layout="responsive"
+                    width={120}
+                    height={60}
                   />
                 </a>
               </Link>
@@ -165,9 +166,11 @@ const Header = ({ pryNav, secNav, bg }) => {
                 href="/login"
                 className="flex hover:text-gray-400 font-bold"
               >
-                <span className="mr-1 border py-1 px-3 rounded-md border-yellow-500">
-                  Login
-                </span>
+                <a>
+                  <span className="mr-1 border py-1 px-3 rounded-md border-yellow-500">
+                    Login
+                  </span>
+                </a>
               </Link>
             </div>
           )}
@@ -178,13 +181,14 @@ const Header = ({ pryNav, secNav, bg }) => {
                 href=""
                 className="flex text-primary hover:text-gray-400 font-semibold p-0"
               >
-                <span className="mr-1">Contact</span>
-                <span className="">Us</span>
+                Contact Us
               </Link>
               <Link href="" className="p-0">
-                <span className="text-primary hover:text-gray-400 font-semibold">
-                  Features
-                </span>
+                <a>
+                  <span className="text-primary hover:text-gray-400 font-semibold">
+                    Features
+                  </span>
+                </a>
               </Link>
             </div>
           )}
@@ -211,12 +215,13 @@ const Header = ({ pryNav, secNav, bg }) => {
               </Link>
 
               <Link href="/my-account">
-                <Image
-                  src={require("../assets/avatar-0.jpg")}
-                  alt=""
-                  className="rounded-full shadow-sm w-36  object-contain aspect-square"
-                  layout="responsive"
-                />
+                <a>
+                  <Image
+                    src={require("../assets/avatar-0.jpg")}
+                    alt=""
+                    className="rounded-full shadow-sm w-36  object-contain aspect-square"
+                  />
+                </a>
               </Link>
             </div>
           )}

@@ -17,14 +17,14 @@
   align-items: center;
 }
 
-a {
+/* a {
   color: #141738;
   padding: 0px 10px;
   font-size: 1em;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-decoration: none;
-}
+} */
 
 .search {
   position: relative;
@@ -48,13 +48,13 @@ a {
   color: #c0c2c5;
 }
 
-ul {
+/* ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin: 0.5rem 1rem;
   align-items: center;
-}
+} */
 
 .linkItems {
   display: flex;

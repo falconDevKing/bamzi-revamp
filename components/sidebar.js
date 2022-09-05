@@ -38,12 +38,12 @@ const Sidebar = ({ showSidebar, page }) => {
             className="w-16"
           />
         </Link>
-        <Image
+        {/* <Image
           src={require("../assets/avatar-1.jpg")}
           alt="avatar"
           className="w-8 rounded-full lg:hidden"
           onClick={() => router.push("/customise-shop")}
-        />
+        /> */}
       </div>
       <span className="lg:hidden text-sm text-primary px-2">
         Evans Bex Electronics Store

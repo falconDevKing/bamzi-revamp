@@ -148,19 +148,16 @@ export default function Checkout() {
                   }
                   width={"120"}
                   alt=""
-                  layout="responsive"
                 />
                 <Image
                   src={require("../assets/M2-image10.png")}
                   width={"120"}
                   alt=""
-                  layout="responsive"
                 />
                 <Image
                   src={require("../assets/GooglePay.png")}
                   width={"120"}
                   alt=""
-                  layout="responsive"
                 />
               </div>
             </div>
@@ -254,19 +251,16 @@ export default function Checkout() {
                   src="https://img.icons8.com/ios-filled/50/000000/shield.png"
                   className={"w-[10%] h-1/5 p-1.5"}
                   alt=""
-                  layout="responsive"
                 />
                 <Image
                   src="https://img.icons8.com/material-outlined/24/000000/recycle-sign.png"
                   className={"w-[10%] h-1/5 p-1.5"}
                   alt=""
-                  layout="responsive"
                 />
                 <Image
                   src="https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/64/000000/external-payment-supermarket-photo3ideastudio-flat-photo3ideastudio.png"
                   className={"w-[10%] h-1/5 p-1.5"}
                   alt=""
-                  layout="responsive"
                 />
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
+import Link from "next/link"
 import { FaShoppingBag, FaTruck, FaUser } from "react-icons/fa"
 
 const UserSidebar = ({ page }) => {
@@ -18,7 +18,7 @@ const UserSidebar = ({ page }) => {
 
   return (
     <div className="bg-gray-100 lg:w-3/12 md:py-16 md:rounded-xl shadow flex md:flex-col md:justify-start justify-center">
-      <Link to="/my-account" className={LinkReset}>
+      <Link href="/my-account" className={LinkReset}>
         <span
           className={page === "my-account" ? currentPage : regularPage}
           onMouseEnter={() => {
@@ -44,7 +44,7 @@ const UserSidebar = ({ page }) => {
         </span>
       </Link>
 
-      <Link to="/orders" className={LinkReset}>
+      <Link href="/orders" className={LinkReset}>
         <span
           className={page === "orders" ? currentPage : regularPage}
           onMouseEnter={() => {
@@ -70,7 +70,7 @@ const UserSidebar = ({ page }) => {
         </span>
       </Link>
 
-      <Link to="/shippinginfo" className={LinkReset}>
+      <Link href="/shippinginfo" className={LinkReset}>
         <span
      className={page === "shipping" ? currentPage : regularPage}
           onMouseEnter={() => {

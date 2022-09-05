@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import AuthStrip from "../components/auth/AuthStrip";
-import AuthCart from "../components/auth/AuthCart";
-import AuthBody from "../components/auth/AuthBody";
-import AuthContent from "../components/auth/AuthContent";
-import AuthContainer from "../components/auth/AuthContainer";
-import Header from "../components/header";
+import AuthStrip from "../../components/auth/AuthStrip";
+import AuthCart from "../../components/auth/AuthCart";
+import AuthBody from "../../components/auth/AuthBody";
+import AuthContent from "../../components/auth/AuthContent";
+import AuthContainer from "../../components/auth/AuthContainer";
+import Header from "../../components/header";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import * as yup from "yup";
