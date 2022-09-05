@@ -40,7 +40,7 @@ export default function Errorpage() {
 
           <div
             className={
-              "lg:bg-errorbg bg-none bg-no-repeat bg-right bg-contain lg:w-1/2 w-full lg:pr-16 pr-0 lg:mt-0 mt-4 items-center"
+              "lg:bg-errorbg bg-none bg-no-repeat bg-right bg-contain lg:w-1/2 w-full lg:pr-16 pr-0 lg:mt-0 mt-4 items-center mb-16"
             }
           >
             <div className={"flex flex-col text-gray-500 py-0 px-6"}>

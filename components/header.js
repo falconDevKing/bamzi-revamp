@@ -14,7 +14,7 @@ const Header = ({ pryNav, secNav, bg }) => {
 
   return (
     <nav className={`${bg ? "bg-bgcolors" : "bg-white shadow-lg"}`}>
-      <div className="w-full md:px-6 lg:px-24 px-4 ">
+      <div className="w-full md:px-6 lg:px-24 px-4 py-4">
         <div className="flex w-full lg:justify-between">
           <div className="flex w-full justify-between lg:justify-start items-center">
             {/**Website Brand*/}
@@ -176,19 +176,18 @@ const Header = ({ pryNav, secNav, bg }) => {
           )}
 
           {secNav === "prelaunch" && (
-            <div className="hidden lg:flex items-center space-x-3">
+            <div className="hidden lg:flex items-center space-x-3 w-52 font-bold ">
               <Link
                 href=""
-                className="flex text-primary hover:text-gray-400 font-semibold p-0"
+                className="flex text-primary hover:text-gray-400 font-semibold p-0 w-24"
               >
                 Contact Us
               </Link>
-              <Link href="" className="p-0">
-                <a>
-                  <span className="text-primary hover:text-gray-400 font-semibold">
-                    Features
-                  </span>
-                </a>
+              <Link
+                href=""
+                className="flex text-primary hover:text-gray-400 font-semibold p-0 w-24"
+              >
+                <a>Features</a>
               </Link>
             </div>
           )}
