@@ -46,11 +46,9 @@ export default function Login() {
         <AuthContent>
           <div className="flex items-center lg:-mt-16 mb-1">
             <Link href="/login" className="p-0 w-1/2">
-              <a>
-                <button className="py-3 w-full bg-secondary rounded-lg shadow-sm font-semibold">
-                  Sign In
-                </button>
-              </a>
+              <button className="py-3 w-full bg-secondary rounded-lg shadow-sm font-semibold">
+                Sign In
+              </button>
             </Link>
             <Link href="/signup" className="p-0 w-1/2">
               <button className="py-2 w-full bg-gray-200 rounded-r-lg font-semibold">
@@ -98,8 +96,8 @@ export default function Login() {
               Login
             </button>
           </form>
-          <Link href="/forgot-password" className="p-0 text-center font-normal">
-            <a>
+          <Link href="/forgot-password">
+            <a className="flex justify-center p-4">
               <span className="text-secondary underline">Forgot Password?</span>
             </a>
           </Link>

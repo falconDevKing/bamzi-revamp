@@ -37,7 +37,7 @@ export default function ResetPassword() {
     };
 
     fetchData();
-  }, []);
+  }, [token]);
 
   return (
     <AuthContainer>

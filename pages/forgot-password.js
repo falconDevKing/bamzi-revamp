@@ -32,7 +32,9 @@ export default function ForgotPassword() {
         <AuthStrip />
         <AuthContent>
           <Link href="/login" className="p-0 font-normal">
-            <p className="text-secondary underline">Remember Password?</p>
+            <p className="text-secondary underline cursor-pointer">
+              Remember Password?
+            </p>
           </Link>
           <p className="text-4xl text-primary font-bold leading-6">
             Verification
