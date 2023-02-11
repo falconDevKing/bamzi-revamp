@@ -46,11 +46,14 @@ export default function Footer({ bgColor, bgC = "bg-transparent", btnColor }) {
           <div className="grid gap-y-6 grid-cols-2 md:grid-cols-4 text-sm">
             <div>
               <Link href="/">
-                <Image
-                  src={require("../assets/BAMZI.png")}
-                  width={"60px"}
-                  alt="bamzi"
-                />
+                <a>
+                  <Image
+                    src={require("../assets/BAMZI.png")}
+                    width={"60px"}
+                    height={"60px"}
+                    alt="bamzi"
+                  />
+                </a>
               </Link>
               <div className="flex space-x-2 lg:space-x-4 mt-8">
                 <Link

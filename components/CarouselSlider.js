@@ -14,6 +14,7 @@ export default function CarouselSlider() {
         centerMode
         showStatus={false}
         showThumbs={false}
+        showIndicators={false}
         centerSlidePercentage={20}
       >
         <div className="px-8 w-48">

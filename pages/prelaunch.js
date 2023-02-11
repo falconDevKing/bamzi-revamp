@@ -138,7 +138,7 @@ export default function Prelaunch() {
           </form>
         </div>
 
-        <div className={""}>
+        <div className={"bg-shapes bg-cover"}>
           <Image
             src={require("../assets/Mask.png")}
             className={"object-cover max-w-full h-auto"}

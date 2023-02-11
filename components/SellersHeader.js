@@ -29,14 +29,19 @@ const SellersHeader = ({ setShowSidebar, showSidebar }) => {
         className="hidden lg:flex items-center space-x-4 cursor-pointer"
         onClick={() => router.push("/customise-shop")}
       >
-        <span className="flex items-center">
+        <div className="flex items-center">
           <FaStoreAlt className="mr-2" /> Evans Bex Electronics Store
-        </span>
-        <Image
-          src={require("../assets/avatar-1.jpg")}
-          alt="avatar"
-          className="w-8 rounded-full"
-        />
+        </div>
+
+        <div className="flex items-center">
+          <Image
+            src={require("../assets/avatar-1.jpg")}
+            alt="avatar"
+            width={40}
+            height={40}
+            className="w-8 rounded-full"
+          />
+        </div>
       </div>
     </div>
   );

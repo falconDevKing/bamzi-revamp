@@ -74,7 +74,7 @@ export default function Shippinginfo() {
                     placeholder="Nigeria"
                   />
                   <input
-                    type="number"
+                    type="text"
                     name="Zip Code"
                     className={
                       "py-3 px-6 rounded-md md:w-1/2 w-full border border-solid border-gray-400"

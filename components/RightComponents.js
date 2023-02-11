@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { BsFillShieldFill, BsCreditCardFill } from "react-icons/bs";
+import { BiRecycle } from "react-icons/bi";
 
 const RightComponents = () => {
   return (
@@ -29,26 +31,14 @@ const RightComponents = () => {
           <p className="text-green-600 grid justify-items-center">
             SECURED PAY
           </p>
-          <p className="text-gray-600 text-sm grid justify-items-center px-6 pt-2">
-            Every Payments are secured with Bamzi and additional securityis
+          <p className="text-gray-600 text-sm grid justify-items-center px-6 pt-2 text-center">
+            Every Payments are secured with Bamzi and additional security is
             ensured with Money Gauranss
           </p>
           <div className="flex justify-center py-6">
-            <Image
-              src="https://img.icons8.com/ios-filled/50/000000/shield.png"
-              className="w-10 px-2"
-              alt="shield"
-            />
-            <Image
-              src="https://img.icons8.com/material-outlined/24/000000/recycle-sign.png"
-              className="w-10 px-2"
-              alt="recycle"
-            />
-            <Image
-              src="https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/64/000000/external-payment-supermarket-photo3ideastudio-flat-photo3ideastudio.png"
-              className="w-10 px-2"
-              alt="payment"
-            />
+            <BsFillShieldFill className="w-[10%] h-1/5 p-1.5" />
+            <BiRecycle className="w-[10%] h-1/5 p-1.5" />
+            <BsCreditCardFill className="w-[10%] h-1/5 p-1.5" />
           </div>
         </div>
       </div>

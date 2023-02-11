@@ -2,6 +2,8 @@ import React from "react";
 import checkout from "../styles/checkout.module.css";
 import Header from "../components/header";
 import Image from "next/image";
+import { BsFillShieldFill, BsCreditCardFill } from "react-icons/bs";
+import { BiRecycle } from "react-icons/bi";
 
 export default function Checkout() {
   return (
@@ -38,10 +40,10 @@ export default function Checkout() {
 
             <div
               className={
-                "bg-white rounded-md border-0 py-1.5 px-4 mt-2 text-base"
+                "bg-white rounded-md border-0 py-4 px-4 mt-2 text-base"
               }
             >
-              <form method="get" action="login.php">
+              <form method="get" action="">
                 <h6>Basic Info</h6>
 
                 <div className={"flex w-full md:flex-row flex-col"}>
@@ -101,7 +103,7 @@ export default function Checkout() {
                     placeholder="Nigeria"
                   />
                   <input
-                    type="number"
+                    type="text"
                     name="Zip Code"
                     className={
                       "py-3 px-6 rounded-md md:w-1/2 w-full border border-solid border-gray-400"
@@ -138,33 +140,39 @@ export default function Checkout() {
 
               <div
                 className={
-                  "flex py-7 px-4 mt-1 border-0 border-solid bg-white rounded-md font-bold"
+                  "flex py-7 px-4 mt-1 border-0 border-solid bg-white rounded-md font-bold space-x-4 justify-evenly w-full"
                 }
               >
-                <Image
-                  src={require("../assets/D4a-image9.png")}
-                  className={
-                    "border-2 border-solid border-lightgray rounded-md my-0 mx-1.5"
-                  }
-                  width={"120"}
-                  alt=""
-                />
-                <Image
-                  src={require("../assets/M2-image10.png")}
-                  width={"120"}
-                  alt=""
-                />
-                <Image
-                  src={require("../assets/GooglePay.png")}
-                  width={"120"}
-                  alt=""
-                />
+                <div>
+                  <Image
+                    src={require("../assets/D4a-image9.png")}
+                    width={"60"}
+                    height={"60"}
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={require("../assets/M2-image10.png")}
+                    width={"60"}
+                    height={"60"}
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={require("../assets/GooglePay.png")}
+                    width={"60"}
+                    height={"60"}
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
 
             <div
               className={
-                "py-4 px-4 mt-8 border-0 border-solid bg-white rounded-md font-bold"
+                "py-4 px-4 mt-8 mb-16 border-0 border-solid bg-white rounded-md font-bold"
               }
             >
               Shopping Summary (4)
@@ -203,7 +211,7 @@ export default function Checkout() {
                 <input
                   type="text"
                   className={
-                    "rounded-md py-1.5 px-[3px] border border-solid border-lightpink w-1/2 text-sm"
+                    "rounded-md py-1.5 px-2 border border-solid border-lightpink w-1/2 text-sm"
                   }
                   placeholder="Coupon Code"
                 />
@@ -247,21 +255,9 @@ export default function Checkout() {
               </div>
 
               <div className={"flex justify-center py-2.5 px-0"}>
-                <Image
-                  src="https://img.icons8.com/ios-filled/50/000000/shield.png"
-                  className={"w-[10%] h-1/5 p-1.5"}
-                  alt=""
-                />
-                <Image
-                  src="https://img.icons8.com/material-outlined/24/000000/recycle-sign.png"
-                  className={"w-[10%] h-1/5 p-1.5"}
-                  alt=""
-                />
-                <Image
-                  src="https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/64/000000/external-payment-supermarket-photo3ideastudio-flat-photo3ideastudio.png"
-                  className={"w-[10%] h-1/5 p-1.5"}
-                  alt=""
-                />
+                <BsFillShieldFill className="w-[10%] h-1/5 p-1.5" />
+                <BiRecycle className="w-[10%] h-1/5 p-1.5" />
+                <BsCreditCardFill className="w-[10%] h-1/5 p-1.5" />
               </div>
             </div>
           </div>
