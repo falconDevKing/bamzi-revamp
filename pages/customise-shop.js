@@ -89,7 +89,7 @@ export default function CustomiseShop() {
                 ></textarea>
                 <p className="hidden lg:block w-3/12 italic text-sm">
                   This is a short description of what your store offers be
-                  short, precise and brief as this is what customers would see
+                  short, precise and brief as this is what customers would see.
                 </p>
               </div>
 
@@ -106,6 +106,8 @@ export default function CustomiseShop() {
                       src={require("../assets/nigeria.png")}
                       alt=""
                       className="w-6 h-3 sm:mt-0 mt-1"
+                      width={24}
+                      height={16}
                     />
                     <p className="text-sm hidden sm:block">Nigeria</p>
                   </span>
@@ -163,60 +165,31 @@ export default function CustomiseShop() {
               className="w-full"
             />
 
-            {
-              loading ? (
-                <div className="h-[300px] w-full bg-shop bg-cover bg-center flex justify-center items-end rounded-lg">
-                  <Image
-                    src={require("../assets/avatar-0.jpg")}
-                    alt=""
-                    className="w-24 h-24 rounded-full mb-12"
-                  />
-                </div>
-              ) : (
-                <div className="h-[240px] w-full relative rounded-lg">
-                  <Image
-                    src={bgImage}
-                    className="h-full w-full object-contain"
-                    alt=""
-                  />
+            {loading ? (
+              <div className="h-[300px] w-full bg-shop bg-cover bg-center flex justify-center items-end rounded-lg pb-2">
+                <Image
+                  src={require("../assets/avatar-0.jpg")}
+                  alt=""
+                  className="rounded-full mb-12"
+                  width={188}
+                  height={188}
+                />
+              </div>
+            ) : (
+              <div className="h-[240px] w-full relative rounded-lg">
+                <Image
+                  src={bgImage}
+                  className="h-full w-full object-contain"
+                  alt=""
+                />
 
-                  <Image
-                    className="w-24 h-24 rounded-full absolute left-24 bottom-20"
-                    src={image}
-                    alt=""
-                  />
-                </div>
-              )
-
-              /* {previewSource && (
-              <img
-                src={previewSource}
-                className="rounded-full"
-                alt="Selected"
-                style={{ height: "120px" }}
-              />
-            )} */
-            }
-            {/* <span className="flex items-center space-x-2">
-              <p className="text-sm text-black">Upload Logo</p>
-              <BsStack />
-            </span>
-            <span className="flex items-center space-x-2">
-              <p className="text-sm text-black">Background Image</p>
-              <BsPaletteFill />
-            </span>
-
-            <div className="h-[300px] w-full bg-shop bg-cover bg-center flex justify-center items-end rounded-lg">
-              <img
-                src={require("../assets/avatar-0.jpg")}
-                alt=""
-                className="w-24 h-24 rounded-full mb-12"
-              />
-            </div> */}
-            {/* 
-            <span className="text-blue-500 underline text-sm mt-8">
-              Preview
-            </span> */}
+                <Image
+                  className="w-24 h-24 rounded-full absolute left-24 bottom-20"
+                  src={image}
+                  alt=""
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -88,30 +88,27 @@ export default function ProductDetails() {
       <div className="container py-6 px-8 lg:px-16">
         {products.map((product) => (
           <div key={product._id}>
-            <div className="grid gap-6 md:grid-cols-2 my-5">
-              <div>
-                <div className="grid gap-2 grid-cols-8 pt-4">
-                  <div className="col-span-1">
+            <div className="flex my-5 space-x-8">
+              <div className="basis-1/2 flex flex-col">
+                <div className="flex items-start pt-4">
+                  <div className="basis-1/6 flex flex-col space-y-4">
                     {product.views.map((img, index) => (
-                      <Image
-                        src={img}
-                        alt=""
-                        key={index}
-                        className="lg:w-3/4 w-full aspect-square block object-contain shadow rounded-md opacity-70 hover:opacity-100 focus:opacity-100 border border-gray-200 mb-2"
-                        role="button"
-                        onClick={() => changeImg(index)}
-                      />
+                      <div key={index} className="h-12 w-12">
+                        <Image
+                          src={img}
+                          alt=""
+                          className="lg:w-3/4 w-full aspect-square block object-contain shadow rounded-md opacity-70 hover:opacity-100 focus:opacity-100 border border-gray-200 mb-2"
+                          role="button"
+                          onClick={() => changeImg(index)}
+                        />
+                      </div>
                     ))}
                   </div>
-                  <div className="col-span-7">
-                    <Image
-                      src={product.views[index]}
-                      className="lg:w-1/2 w-3/4 object-contain aspect-square block mx-auto"
-                      alt=""
-                    />
+                  <div className="basis-4/6 p-8 h-[28rem] w-[28rem] self-center flex self-center justify-center">
+                    <Image src={product.views[index]} className="" alt="" />
                   </div>
                 </div>
-                <div className="flex space-x-2 mt-16 justify-end">
+                <div className="flex space-x-2 mt-8 justify-end">
                   <button
                     className="border border-gray-200 rounded-full p-2 shadow"
                     onClick={prevView}
@@ -127,7 +124,7 @@ export default function ProductDetails() {
                 </div>
               </div>
 
-              <div>
+              <div className="basis-1/2">
                 <nav className="flex mb-4" aria-label="breadcrumb">
                   <ol className="inline-flex items-center space-x-1 md:space-x-3">
                     <li className="self-center">
@@ -172,14 +169,15 @@ export default function ProductDetails() {
                   {product.title}
                 </h4>
                 <h2 className="text-2xl font-semibold mt-1 text-secondary">{`$${product.price}`}</h2>
-                <div className="flex mt-2">
+                <div className="flex mt-2 space-x-6">
                   {product.variants.src.map((img, index) => (
-                    <Image
-                      src={img}
-                      alt=""
-                      key={index}
-                      className="w-16 h-auto block aspect-square object-contain shadow-sm rounded-md opacity-70 hover:opacity-100 focus:opacity-100 border border-x-gray-200 mr-2"
-                    />
+                    <div key={index} className="w-20">
+                      <Image
+                        src={img}
+                        alt=""
+                        className="w-16 h-auto block aspect-square object-contain shadow-sm rounded-md opacity-70 hover:opacity-100 focus:opacity-100 border border-x-gray-200 mr-2"
+                      />
+                    </div>
                   ))}
                 </div>
                 <div className="lg:flex lg:space-x-3 mt-2">

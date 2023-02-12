@@ -1,6 +1,7 @@
 import React from "react";
 import { MdDelete, MdShoppingCart } from "react-icons/md";
 import Image from "next/image";
+import { RiDeleteBin6Line } from "react-icons/ri";
 
 const LeftCompo = ({ products }) => {
   return (
@@ -11,11 +12,7 @@ const LeftCompo = ({ products }) => {
             Wishlist (3)
           </div>
           <div className="flex item-center">
-            <Image
-              src="https://img.icons8.com/ios/50/000000/delete--v1.png"
-              className="w-5 h-4"
-              alt="delete all"
-            />
+            <RiDeleteBin6Line size={20} />
             <div className="text-sm text-gray-600 px-1">Delete All</div>
           </div>
         </div>

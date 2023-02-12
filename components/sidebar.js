@@ -35,7 +35,8 @@ const Sidebar = ({ showSidebar, page }) => {
           <Image
             src={require("../assets/BAMZI.png")}
             alt="bamzi"
-            className="w-16"
+            width={108}
+            height={60}
           />
         </Link>
         {/* <Image

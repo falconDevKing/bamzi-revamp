@@ -12,41 +12,49 @@ export default function Buyeraccount() {
         <UserSidebar page="my-account" />
 
         <div className="flex justify-between bg-white lg:w-9/12 w-full lg:py-12 lg:px-16 md:py-6 md:px-8 py-3 px-4 md:rounded-r-xl shadow md:flex-row flex-col">
-          <div className="bg-white py-5 mx-2 text-sm">
-            <form method="get" action="login.php">
+          <div className="bg-white py-5 mx-2 text-sm w-2/5">
+            <form method="get" action="">
               <h6>Account Info</h6>
 
-              <div className="flex flex-col">
+              <div className="flex flex-col space-y-4">
                 <input
                   type="text"
                   name="name"
-                  className={"rounded-md border border-solid border-gray-200"}
+                  className={
+                    "py-3 px-6 rounded-md  w-full border border-solid border-gray-400"
+                  }
                   placeholder="Full Name"
                 />
                 <input
                   type="text"
                   name="email"
                   className={
-                    "rounded-md border border-solid border-gray-200 bg-gray-200 text-black"
+                    "py-3 px-6 rounded-md  w-full border border-solid border-gray-400 bg-gray-200 text-black"
                   }
                   placeholder="omololadaniel@gmail.com"
                 />
                 <input
                   type="number"
                   name="number"
-                  className={"rounded-md border border-solid border-gray-200"}
+                  className={
+                    "py-3 px-6 rounded-md  w-full border border-solid border-gray-400"
+                  }
                   placeholder="Phone Number"
                 />
                 <input
                   type="number"
                   name="number"
-                  className={"rounded-md border border-solid border-gray-200"}
+                  className={
+                    "py-3 px-6 rounded-md  w-full border border-solid border-gray-400"
+                  }
                   placeholder="Date of Birth"
                 />
                 <input
                   type="text"
                   name="text"
-                  className={"rounded-md border border-solid border-gray-200"}
+                  className={
+                    "py-3 px-6 rounded-md  w-full border border-solid border-gray-400"
+                  }
                   placeholder="Gender"
                 />
               </div>
@@ -62,27 +70,33 @@ export default function Buyeraccount() {
             </form>
           </div>
 
-          <div className="bg-white py-5 mx-2 text-sm">
+          <div className="bg-white py-5 mx-2 text-sm w-2/5">
             <form method="get" action="login.php">
               <h6>Change Password</h6>
 
-              <div className="flex flex-col">
+              <div className="flex flex-col space-y-4">
                 <input
                   type="text"
                   name="name"
-                  className={"rounded-md border border-solid border-gray-200"}
+                  className={
+                    "py-3 px-6 rounded-md  w-full border border-solid border-gray-400"
+                  }
                   placeholder="Old Password"
                 />
                 <input
                   type="text"
                   name="name"
-                  className={"rounded-md border border-solid border-gray-200"}
+                  className={
+                    "py-3 px-6 rounded-md  w-full border border-solid border-gray-400"
+                  }
                   placeholder="New Password"
                 />
                 <input
                   type="text"
                   name="name"
-                  className={"rounded-md border border-solid border-gray-200"}
+                  className={
+                    "py-3 px-6 rounded-md  w-full border border-solid border-gray-400"
+                  }
                   placeholder="Confirm Password"
                 />
               </div>

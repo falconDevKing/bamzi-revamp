@@ -7,8 +7,8 @@ const SalesItem = ({ item }) => {
     <div className="flex w-full items-center">
       <div className="lg:w-4/12 w-5/12 p-4 flex items-center space-x-4">
         <input type="checkbox" className="accent-secondary" />
-        <div className="border border-primary rounded w-12 h-12 p-2 hidden md:block">
-          <Image src={item.product.img} alt="" className="" />
+        <div className="border border-primary rounded w-12 h-12 py-1.5 px-2 hidden md:block">
+          <Image src={item.product.img} alt="" width={30} height={36} />
         </div>
         <p className="text-black">{item.product.title}</p>
       </div>

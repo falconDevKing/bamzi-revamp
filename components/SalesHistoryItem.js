@@ -1,5 +1,5 @@
-import React from "react"
-import { RiEqualizerFill } from "react-icons/ri"
+import React from "react";
+import { RiEqualizerFill } from "react-icons/ri";
 
 const SalesHistoryItem = ({ item }) => {
   return (
@@ -34,13 +34,13 @@ const SalesHistoryItem = ({ item }) => {
         </span>
       </div>
       <div className="xl:w-2/12 w-1/12 hidden xl:block">
-        <span className="flex items-center justify-between">
+        <span className="flex items-center justify-evenly">
           <p className="text-sm font-semibold">{item.date}</p>
           <RiEqualizerFill size={20} />
         </span>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SalesHistoryItem
+export default SalesHistoryItem;

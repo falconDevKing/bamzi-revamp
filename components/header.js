@@ -120,7 +120,7 @@ const Header = ({ pryNav, secNav, bg }) => {
             )}
 
             {pryNav === "user" && (
-              <div className="hidden lg:flex items-center ml-10 space-x-2">
+              <div className="hidden lg:flex items-center ml-10 space-x-4">
                 <Link
                   href="/sellers-board"
                   className="text-primary hover:text-gray-400 font-semibold"
@@ -133,19 +133,18 @@ const Header = ({ pryNav, secNav, bg }) => {
                 >
                   Stores
                 </Link>
-                <form action="">
-                  <div className="relative mb-3 flex items-center text-gray-400 focus-within:text-gray-600">
-                    <input
-                      type="text"
-                      name="search"
-                      placeholder="Search anything"
-                      autoComplete="off"
-                      aria-label="Search anything"
-                      className="px-3 py-2 placeholder:text-gray-500 text-black border-none rounded-2xl ring-2 ring-gray-200 focus:ring-gray-500 focus:ring-2"
-                    />
-                    <IoIosSearch className="w-5 h-5 absolute right-2" />
-                  </div>
-                </form>
+
+                <div className="relative flex items-center text-gray-400 focus-within:text-gray-600">
+                  <input
+                    type="text"
+                    name="search"
+                    placeholder="Search anything"
+                    autoComplete="off"
+                    aria-label="Search anything"
+                    className="px-3 py-2 w-96 placeholder:text-gray-500 text-black border-none rounded-2xl ring-2 ring-gray-200 focus:ring-gray-500 focus:ring-2"
+                  />
+                  <IoIosSearch className="w-5 h-5 absolute right-2" />
+                </div>
               </div>
             )}
           </div>
@@ -153,20 +152,14 @@ const Header = ({ pryNav, secNav, bg }) => {
           {/**secondary nav items */}
           {secNav === "auth" && (
             <div className="hidden lg:flex items-center space-x-3">
-              <Link
-                href="/Shopping-Cart"
-                className="flex text-primary hover:text-gray-400 font-bold"
-              >
-                <a>
+              <Link href="/Shopping-Cart">
+                <a className="flex text-primary hover:text-gray-400 font-bold">
                   <span className="mr-1">Cart</span>
                   <IoIosCart className="w-5 h-5" />
                 </a>
               </Link>
-              <Link
-                href="/login"
-                className="flex hover:text-gray-400 font-bold"
-              >
-                <a>
+              <Link href="/login">
+                <a className="flex hover:text-gray-400 font-bold">
                   <span className="mr-1 border py-1 px-3 rounded-md border-yellow-500">
                     Login
                   </span>
@@ -187,38 +180,32 @@ const Header = ({ pryNav, secNav, bg }) => {
                 href=""
                 className="flex text-primary hover:text-gray-400 font-semibold p-0 w-24"
               >
-                <a>Features</a>
+                Features
               </Link>
             </div>
           )}
 
           {secNav === "user" && (
-            <div className="hidden lg:flex items-center">
-              <Link
-                href="/wishlist"
-                className="flex text-primary hover:text-gray-400 font-semibold"
-              >
-                <a>
+            <div className="hidden lg:flex items-center space-x-4">
+              <Link href="/wishlist">
+                <a className="flex text-primary hover:text-gray-400 font-semibold">
                   <span className="mr-1">Wishlist</span>
                   <IoIosHeartEmpty className="w-5 h-5" />
                 </a>
               </Link>
-              <Link
-                href="/shopping-cart"
-                className="flex text-primary hover:text-gray-400 font-semibold"
-              >
-                <a>
+              <Link href="/shopping-cart">
+                <a className="flex text-primary hover:text-gray-400 font-semibold">
                   <span className="mr-1">Cart</span>
                   <IoIosCart className="w-5 h-5" />
                 </a>
               </Link>
 
               <Link href="/my-account">
-                <a>
+                <a className="w-14">
                   <Image
                     src={require("../assets/avatar-0.jpg")}
                     alt=""
-                    className="rounded-full shadow-sm w-36  object-contain aspect-square"
+                    className="rounded-full shadow-sm object-contain aspect-square"
                   />
                 </a>
               </Link>

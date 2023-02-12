@@ -5,11 +5,10 @@ import Image from "next/image";
 const Card = ({ product, btnColor }) => {
   return (
     <div className="flex flex-col bg-white border-none rounded-md shadow py-4">
-      <div className="mx-auto">
+      <div className="h-48 w-48 self-center flex items-center justify-center">
         <Image
-          className="h-36 aspect-square object-contain block"
+          className=""
           src={product.images ? product.images[0] : product.image}
-          style={{ objectFit: "contain" }}
           alt="item"
         />
       </div>

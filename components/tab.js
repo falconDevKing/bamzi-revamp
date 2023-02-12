@@ -103,14 +103,16 @@ const Tab = ({ product }) => {
             return (
               <div
                 key={index}
-                className="px-2 py-6 flex flex-col-reverse lg:flex-row"
+                className="p-4 lg:p-2 flex flex-col-reverse lg:flex-row"
               >
-                <div className="flex items-start space-x-2 lg:w-1/4 mt-2 lg:mt-0">
-                  <Image
-                    src={review.avatar}
-                    className="w-12 aspect-square rounded-full object-contain"
-                    alt=""
-                  />
+                <div className="flex items-center space-x-2 lg:w-1/4 mt-2 lg:mt-0">
+                  <div className="w-16">
+                    <Image
+                      src={review.avatar}
+                      className="aspect-square rounded-full object-contain"
+                      alt=""
+                    />
+                  </div>
                   <div className="space-y-1">
                     <p className="text-sm">{review.name}</p>
                     <p className="text-sm font-semibold">{review.date}</p>
